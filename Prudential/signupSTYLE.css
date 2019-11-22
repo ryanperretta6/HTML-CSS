@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document*/
+/*Define the body element's color*/
+
+//Classes
+
+.cancel
+{
+}
+.cancel:hover
+{
+   box-shadow: 0 5px 15px rgba(253, 72,72, 0.4);
+}
+
+.signup_btn
+{
+   background-color: #4ac948;
+   margin: 0px 10px;
+}
+.signup_btn:hover
+{
+   box-shadow: 0 5px 15px rgba(73, 226, 14, 0.4);
+}
+.icon_bar
+{
+   width: 100%;
+   height: 110px;
+   background-color: #07639D;
+   overflow: auto;
+   border-radius: 7px;
+}
+.icon_bar img
+{
+   display: block;
+   margin: 0 auto;
+   padding-top: 15px;
+}
+.inputs
+{
+   margin-top: 10px;
+   margin-left: 15px;
+}
+.required
+{
+   color: Red;
+   display: inline;
+}
+
+
+button
+{
+   border-radius: 9px;
+   padding: 6px 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+label
+{
+   padding: 10px 0px;
+}
+
+input
+{
+   padding: 2px;
+   margin-bottom: 6px;
+   margin-top: 1px;
+   border-radius: 5px;
+}
+input::-webkit-input-placeholder
+{
+   color: #07639D !important;
+}
+input:-moz-placeholder
+{
+   color: #07639D !important;
+}
+input::-moz-placeholder
+{
+   color: #07639D !important;
+}
+input:-ms-input-placeholder
+{
+   color: #07639D !important;
+}
+
+body
+{
+   background-color: #FEFDFB;
+   font-family: "Lucida Bright", Georgia, serif;
+   color: #07639D;
+}
+
+/*This section is for links*/
+a:link
+{
+font-weight:normal;
+color: #07639D;
+}
+
+a:visited
+{
+font-weight:normal;
+color:Pink;
+}
+
+a:hover
+{
+font-weight: normal;
+color: #FF7216;
+}
+
+
+p {
+   font-style:italic;
+   font-size:15px;
+}

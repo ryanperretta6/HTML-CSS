@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	<title>Extra Info</title>
+	<link rel="icon" href="prudential.png">
+    </head>
+    <body>
+      <script>
+	    function autotab(current,to)
+		{
+    			if (current.getAttribute && current.value.length==current.getAttribute("maxlength")) 
+    			{
+        			to.focus() 
+    			}
+		}
+       </script>
+      <link rel="stylesheet" type="text/css" href="extrainfoSTYLE.css">
+	<div class="icon_bar">
+          <img src="logo.png" alt="Prudential Logo">
+        </div>
+      <form name="extra" method="POST" action="#">
+	<div class="inputs">
+	   <h1>Extra Information</h1>
+	   <div class="indent">
+	   <label><b>Date of Birth:</b></label>
+	   <p class="required" style="margin-left: 4px;">*</p>
+	   <br/>
+	   <input type="date" name="dob" min="1890-1-1" max="1999-5-30" required>
+	  <br/>
+	  <label><b>Credit Score:</b></label>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <input style="width:110px;" type="number" min="0" max="850" placeholder="Enter Credit Score" name="credit" required>
+	  <br/>
+	  <label><b>Beneficiary Info:</b></label>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <div class="beneficiaryLabels">
+	  <label>Name:</label>
+	  <div class="dispInline">
+	  <input type="text" name="benFirstName" placeholder="First Name" required>
+	  <input style="width: 20px;" type="text" name="benMiddleInit" placeholder="MI" required>
+	  <input type="text" name="benLastName" name="benLastName" placeholder="Last Name" required>
+	  </div>
+	  <br/>
+	  <label>Phone Number(s):</label>
+	  <br/>
+	  <label style="font-size: 12px; margin-left: 10px;">Home:</label>
+	  <div class="phoneNum">
+	    <p>(</p>
+	    <input style="margin-left:5px;" type="number" oninput="autotab(this,document.extra.benHome2)" maxlength="3" name="benHome1" required>
+	    <p>) -</p>
+	    <input type="number" oninput="autotab(this,document.extra.benHome3)" maxlength="3" name="benHome2" required>
+	    <p>-</p>
+	    <input type="number" maxlength="4" name="benHome3" required>
+	  </div>
+	  <br/>
+	  <label style="font-size: 12px; margin-left: 10px;">Mobile:</label>
+	  <div class="phoneNum">
+	    <p>(</p>
+	    <input style="margin-left:5px;" type="number" oninput="autotab(this,document.extra.benMobile2)" maxlength="3" name="mobile1">
+	    <p>) -</p>
+	    <input type="number" maxlength="3" oninput="autotab(this,document.extra.benMobile3)"name="benMobile2">
+	    <p>-</p>
+	    <input type="number" maxlength="4" name="benMobile3">
+	  </div>
+	  </div>
+	  <br/>
+	  <label><b>Address:</b></label>
+	  <p class="required" style="margin-left: 156px;">*</p>
+	  <p class="required" style="margin-left: 155px;">*</p>
+	  <br/>
+	  <input class="address" style="width: 100px;" type="number" min="1" placeholder="Apt. Number" name="aptNum">
+	  <input class="address" style="width: 100px;" type="number" min="1" placeholder="Street Number" name="strNum" required>
+	  <input class="address" style="width: 150px;" type="text" placeholder="Street Name" name="strName" required>
+	  <br/>
+	  <label><b>Employed:  </b></label>
+	  <select name="employed" required>
+	    <option value selected="selected">Please select</option>
+		<option value="Yes">Yes</option>
+	    <option value="No">No</option>
+	  </select>
+	  <p class="required" style="margin-left: 1px;">*</p>
+	  <br/>
+	  <label><b>Sex:  </b></label>
+	  <select name="sex" required>
+		<option value selected="selected">Please select</option>
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+	  </select>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <label><b>Height:</b></label>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <select style="width: 60px; display: inline;"name="feet" required>
+		<option value selected="selected">Feet</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+	  </select>
+	  <select style="width: 70px; display: inline;" name="inches" required>
+		<option value selected="selected">Inches</option>
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+	  </select>
+	  <br/>
+	  <label><b>Weight:</b></label>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <input style="width: 80px;" type="number" placeholder="Weight (lbs.)" min="1" max="1000" name="weight" required>
+	  <br/>
+	  <label><b>Permanent U.S. Resident:</b></label>
+	  <select name="permRes" required>
+	    <option value selected="selected">Please select</option>
+		<option value="Yes">Yes</option>
+	    <option value="No">No</option>
+	  </select>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <label><b>Phone Number(s):</b></label>
+	  <br/>
+	  <label style="font-size: 12px; margin-left: 10px;">Home:</label>
+	  <div class="phoneNum">
+	    <p>(</p>
+	    <input style="margin-left:5px;" type="number" oninput="autotab(this,document.extra.home2)" maxlength="3" name="home1" required>
+	    <p>) -</p>
+	    <input type="number" oninput="autotab(this,document.extra.home3)" maxlength="3" name="home2" required>
+	    <p>-</p>
+	    <input type="number" oninput="autotab(this,document.extra.mobile1)" maxlength="4" size="4" name="home3" required>
+	  </div>
+	  <br/>
+	  <label style="font-size: 12px; margin-left: 10px;">Mobile:</label>
+	  <div class="phoneNum">
+	    <p>(</p>
+	    <input style="margin-left:5px;" type="number" oninput="autotab(this,document.extra.mobile2)" maxlength="3" name="mobile1" required>
+	    <p>) -</p>
+	    <input type="number" maxlength="3" oninput="autotab(this,document.extra.mobile3)"name="mobile2" required>
+	    <p>-</p>
+	    <input type="number" value maxlength="4" name="mobile3" required>
+	  </div>
+	  <br/>
+	  <label><b>Social Security Number:</b></label>
+	  <p class="required" style="margin-left: 4px;">*</p>
+	  <br/>
+	  <input style="width: 80px;" type="number" min="0000" max="9999" placeholder="Last 4 Digits" name="socSec" required>
+	  <br/>
+	  <div style="margin-top: 10px;">
+	  <p class="required">*</p><p style="display: inline; color: #07639D"> = required</p>
+	  </div>
+	  <br/>
+	  <button type="submit" class="continue">Continue</button>
+	  </div>	   
+	</div>
+      </form>
+    </body>
+  </html>

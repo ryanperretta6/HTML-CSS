@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+.icon_bar
+{
+   width: 100%;
+   height: 100px;
+   background-color: #07639D;	
+   overflow: auto;
+   border-radius: 7px;
+}
+.icon_bar img
+{
+   display: block;
+   margin: 0 auto;
+   padding-top: 10px;
+   
+}
+.phoneNum{}
+.phoneNum input
+{
+   display: inline;
+   width: 40px;
+}
+.phoneNum p
+{
+   display: inline;
+}
+.inputs
+{
+   margin-top: 10px;
+   margin-left: 15px;
+}
+.indent
+{
+   margin-left: 20px;
+}
+.required
+{
+   color: Red;
+   display: inline;
+}
+.continue
+{
+   background-color: #4ac948;
+   margin: 0px 10px;
+}
+.continue:hover
+{
+   box-shadow: 0 5px 15px rgba(73, 226, 14, 0.4);
+}
+
+.dispInline
+{
+	display: inline;
+}
+.beneficiaryLabels label
+{
+	margin-left: 10px;
+}
+
+select
+{
+   display: inline;
+   padding: 2px;
+   margin-top: 3px;
+   margin-bottom: 2px;
+   color: #07639D;
+}
+option
+{
+   color: #07639D;
+}
+label
+{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   margin-left: -8px;
+}
+
+input
+{
+   padding: 2px;
+   margin-bottom: 6px;
+   margin-top: 1px;
+   border-radius: 5px;
+   color: #07639D;
+   margin-right: 4px;
+}
+input.year
+{
+   border-radius: 0px;
+   width: 50px;
+}
+input.address
+{
+   display: inline;
+}
+input::-webkit-input-placeholder
+{
+   color: #07639D !important;
+}
+input:-moz-placeholder
+{
+   color: #07639D !important;
+}
+input::-moz-placeholder
+{
+   color: #07639D !important;
+}
+input:-ms-input-placeholder
+{
+   color: #07639D !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body
+{
+   background-color: #FEFDFB;
+   font-family: "Lucida Bright", Georgia, serif;
+   color: #07639D;
+}
+button
+{
+   border-radius: 9px;
+   padding: 6px 20px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
