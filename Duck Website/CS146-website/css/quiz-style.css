@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    font-family: "Lucida Bright", Georgia, serif; 
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #a52323;
+    color: white;
+}
+
+.head{
+    text-decoration: underline;
+    text-decoration-color: #a52323;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.parallax{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/duck-tongue.jpg");
+}
+.question{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 25%;
+	border-radius: 5%;
+	padding: 1%;
+	margin: 1%;
+}
+.correct{
+	background-color: rgba(0,255,0,0.4);
+	border-radius: 8%;
+}
+.incorrect{
+	background-color: rgba(255,0,0,0.4);
+	border-radius: 8%;
+}
+#duck-quiz{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.question>span{
+	padding: 3%;
+}
+.question>p{
+	text-align: center;
+}
+#correct-answer-1 input{
+	border-radius: 6%;
+	padding: 2%;
+}
+#correct-answer-4 input{
+	border-radius: 6%;
+	border-style: inset;
+	padding: 2%;
+}
+.hidden{
+	visibility: hidden;
+}
+.submit-button {
+    border-radius: 20px;
+    background-color: #a52323;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-size:150%;
+}
+
+.submit-button-hover{
+    background-color: #ebe8e8;
+    color: black;
+	border: inset;
+}

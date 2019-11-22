@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    font-family: "Lucida Bright", Georgia, serif; 
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #a52323;
+    color: white;
+}
+
+.head{
+    text-decoration: underline;
+    text-decoration-color: #a52323;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.duckcare{
+	margin: 3% auto;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 75%;
+
+}
+.parallax{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/duckCare.jpg");
+}
+#duck-pic{
+	width: 35%;
+}
+#duck-care-header-pics{
+	width: 10%;
+	padding: 1%;
+}
+	

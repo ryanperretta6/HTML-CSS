@@ -1,0 +1,55 @@
+.parallax2 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/holding_ducks.jpg");
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-center1 {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #a52323;
+    color: white;
+}
+
+.flex-center2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin: 5%;
+}
+
+.descrip {
+    font-style: italic;
+    margin-top: 0;
+}
+
+.start {
+    margin-top: 5%;
+}
+
+.head{
+    text-decoration: underline;
+    text-decoration-color: #a52323;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0px;
+    font-family: "Lucida Bright", Georgia, serif; 
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header-pic{
+	width: 10%;
+	padding: 1%;
+}
